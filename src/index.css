@@ -1,0 +1,100 @@
+.hero-section {
+    background-image: url('./assets/ab1.webp');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    color: white;
+    padding: 60px 0;
+  }
+  
+  .hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 1;
+  }
+  
+  .hero-section .container {
+    position: relative;
+    z-index: 2;
+  }
+
+  .custom-navbar {
+    background-color: #7d1212 !important; /* Make it transparent or change to solid */
+    /* padding: 1rem 0; */
+    position: absolute;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+  }
+  
+  .custom-navbar .nav-link {
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: white !important; /* or any other color */
+    transition: color 0.3s ease;
+  }
+  
+  .custom-navbar .nav-link:hover {
+    color: #ff1900e9 !important; /* Accent color on hover */
+  }
+
+
+  /* Basic styles */
+.custom-navbar {
+  background-color: #1e1e2f; /* adjust as per your theme */
+}
+
+/* Mobile nav override */
+@media (max-width: 767.98px) {
+  .custom-collapse {
+    position: fixed;
+    top: 0;
+    right: -75vw;
+    height: 100vh;
+    width: 75vw;
+    background-color: #7d1212;
+    transition: right 0.3s ease-in-out;
+    z-index: 1040;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .custom-collapse.show {
+    right: 0;
+  }
+
+  .custom-navbar .navbar-collapse {
+    flex-direction: column;
+  }
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: right;
+  justify-content: right;
+}
+
+/* For medium and larger screens */
+@media (min-width: 768px) {
+  .nav-links {
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-right: 2rem;
+  }
+}
+
+.designation {
+  color: #ffbd59;
+}
+
+
+  
+  
